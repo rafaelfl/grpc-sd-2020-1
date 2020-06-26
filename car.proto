@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package car;
+
+message Carro {
+    string modelo = 1;
+    string marca = 2;
+    string cor = 3;
+}
+
+message ListaDeCarros {
+    repeated Carro carros = 1;
+}
+
+message Posicao {
+    int32 posicao = 1;
+}
+
+message Vazia { }
+
+service ServicoCarro {
+    rpc ListarCarros (Vazia) returns (ListaDeCarros);
+    rpc ConsultarCarro (Posicao) returns (Carro);
+    rpc RegistrarCarro (Carro) returns (Vazia);
+}

@@ -1,0 +1,27 @@
+{
+  "name": "grpc-sd-2020-3",
+  "version": "1.0.0",
+  "description": "Exemplo de código utilizando gRPC para o registro de carros.",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafaelfl/grpc-sd-2020-3.git"
+  },
+  "author": "Rafael Fernandes Lopes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafaelfl/grpc-sd-2020-3/issues"
+  },
+  "homepage": "https://github.com/rafaelfl/grpc-sd-2020-3#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "@grpc/proto-loader": "^0.5.4",
+    "grpc": "^1.24.3"
+  }
+}
